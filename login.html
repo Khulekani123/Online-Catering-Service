@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "with=device-width, initial-scale=1.0">
+        <title> Online Catering Service </title>
+        <link rel ="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+            <div class="container d-flex">
+                <div class="contact-info mr-auto">
+                    <p>
+                       " Stay safe! Visit "
+                        <a href="https://sacoronavirus.co.za/" style = "color:white" target= "_blank"> sacoronavirus.co.za</a> " for official COVID-19 information. "
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class = "header">
+            <nav class="navbar navbar-custom">
+                <div class = "nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">OUR SERVICES</a></li>
+                        <li id = "header-logo" class>
+                         <div class = "header-logo-section">
+                           <div class = "logo">
+                           <a href = "index.html">
+                           <img class = "logo-theme-main logo-theme-custom" src="wed/pundrulu.png" alt ="logo">
+                           </a>
+                           </div>
+                         </div>
+                       </li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="login.html">BOOK US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+     <div class = "background">
+         <div class = "form-box">
+             <div class = "button-box">
+                 <div id="btn"></div>
+                 <button type = "button" class="toggle-btn" onclick="login()"> Log In </button>
+                 <button type = "button" class="toggle-btn" onclick="register()"> Register </button>
+             </div>
+             <div class = "social-icons">
+                <img src = "wed/facebook2.png">
+                <img src = "wed/google2.jpeg">
+            </div>
+
+            <form id="login" class= "input-group">
+                <input type= "text" class= "input-field" placeholder= "Email" required>
+                <input type= "text" class= "input-field" placeholder= "Enter Password" required>
+                <input type= "checkbox" class= "check-box"> <span> Remember Password </span>
+                <button type= "submit" class= "submit-btn"> Log In</button>
+            </form>
+
+            <form id="register" class= "input-group">
+                <input type= "text" class= "input-field" placeholder= "First name" required>
+                <input type= "text" class= "input-field" placeholder= "Last name" required>
+                <input type= "text" class= "input-field" placeholder= "Gender" required>
+                <input type= "email" class= "input-field" placeholder= "Email" required>
+                <input type= "number" class= "input-field" placeholder= "Contact" required>
+                <input type= "text" class= "input-field" placeholder= "Province" required>
+                <input type= "text" class= "input-field" placeholder= "Town" required>
+                <input type= "checkbox" class= "check-box"> <span> I agree to the terms & conditions.</span>
+                <button type= "submit" class= "submit-btn"> Register</button>
+            </form>
+         </div>
+    
+     </div>
+
+     <script>
+         var x = document.getElementById("login");
+         var y = document.getElementById("register");
+         var z = document.getElementById("btn");
+
+         function register(){
+             x.style.left = "-400px";
+             y.style.left = "50px";
+             z.style.left = "110px";
+         }
+
+         function login(){
+             x.style.left = "50px";
+             y.style.left = "450px";
+             z.style.left = "0px";
+         }
+
+     </script>
+    </body>
+</html>
+   

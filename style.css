@@ -1,0 +1,612 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*-----BACKGROUND IMAGE----*/
+.b-img{
+  background-color: #cccccc;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+/*-----Top Bar with Covid-19 link----*/
+#topbar {
+  background: #544f4b;
+  height: 30px;
+  font-size: 15px;
+  text-align: left;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+  text-decoration: underline;
+}
+
+#topbar .contact-info p {
+  margin-left: 25px;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+}
+
+#topbar .contact-info i:first-child {
+  margin-left: 0;
+}
+
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar a:hover {
+  color: #544f4b;
+}
+
+/*-----Navigation links----*/
+nav {
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li a:hover:before, .nav-links ul li:hover > a:before, .nav-links ul li .active > a:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.nav-links ul li a:hover, .nav-links ul li .active > a, .nav-links ul li:hover > a {
+  color: #544f4b;
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#544f4b;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height:2px;
+    background: #544f4b;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+
+/*----Modify the background color---*/
+.navbar-custom {
+    width: auto;
+    background-color:white;
+}
+
+/* Desktop Navigation */
+.nav-links ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links ul li > ul {
+  display: flex;
+}
+
+.nav-links ul li > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+
+.nav-links ul li a {
+  display: block;
+  position: relative;
+  color: #222222;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 3px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-links ul li > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #106eea;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.welcome-text h1{
+    text-align: center;
+    color: #544f4b;
+    font-size: 70px;
+}
+
+.welcome-text p{
+    text-align: center;
+    color:white;
+    font-size: 25px;
+}
+
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    background-color: #544f4b;
+}
+
+/*--------Login/Registration--------*/
+.background{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(wed/home.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+/*-----form-box----*/
+.form-box{
+  width: 380px;
+  height: 650px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+
+/*----toogle button----*/
+.button-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #544f4b;
+  border-radius: 30px;
+}
+
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right,#544f4b,#fff);
+  border-radius: 30px;
+  transition: .5s;
+}
+
+/*------social icons----*/
+.social-icons{
+  margin: 30px;
+  text-align: center;
+}
+
+.social-icons img{
+  width: 30px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 0 #7f7f7f3d;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/*-----input-group----*/
+.input-group{
+  top: 180px;
+  width: 280px;
+  position: absolute;
+  transition: .5s;
+}
+
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #544f4b,#fff);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.check-box{
+  margin: 30px 10px 30px 0;
+}
+
+span{
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#login{
+  left: 50px;
+}
+
+#register{
+  left: 450px;
+}
+
+/*----about us---*/
+*{
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+body
+{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #544f4b;
+}
+.about-us
+{
+width: 100%;
+}
+.about-us h1
+{
+  text-align: center;
+  font-size: 40px;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+}
+.about-us h1::after
+{
+  content: "";
+  height: 5px;
+  width: 200px;
+  background-color: #222222;;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+.wrapper
+{
+  padding: 0px 60px;
+  margin: 60px auto;
+}
+.content
+{
+  width: 60%;
+  float: left;
+  text-align: left;
+  padding: 0px 30px;
+}
+.content h3
+{
+  color:#222222;
+  letter-spacing: 1px;
+}
+.content p
+{
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #222222;
+  margin-top: 20px;
+}
+
+.content .Rbutton
+{
+  margin-top: 40px;
+
+}
+.content .Rbutton a
+{
+  color: #222222;
+  background-color: #777;
+  border: 1px solid #222222;
+  padding: 10px 35px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+.content .Rbutton a:hover
+{
+ background-color: #fff;
+ color: #222222;
+}
+.image-section
+{
+  width: 30%;
+  float: right;
+  padding: 0px 30px;
+}
+.image-section img
+{
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 900px)
+{
+  .about-us{
+    width: 100%;
+    padding-top: 20px;
+  }
+  .about-us h1{
+    font-size: 32px;
+  }
+  .content{
+    width: 100%;
+    float: none;
+  }
+  .content .Rbutton{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .content .Rbutton a{
+    padding: 8px 25px;
+  }
+  .image-section{
+    float: none;
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+/*-----contact us-----*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+.contact
+{
+  background-color: #cccccc;
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .content
+{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2
+{
+  font-size: 36px;
+  font-weight: 500;
+}
+.container
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contactInfo .box
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .icon
+{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+ font-weight: 500;
+}
+.contactForm
+{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contactForm h2
+{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+/*------footer------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+.container
+{
+  max-width: 1170px;
+  margin: auto;
+}
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer
+{
+  background-color: #cccccc;
+  padding: 70px 0;
+}
+.footer-col
+{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h3
+{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h3::before
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #544f4b;
+  height: 2px;
+  box-sizing: border-box;
+  width: 95px;
+}
+.footer-col ul li a:hover
+{
+  color: #544f4b;
+  padding-left: 8px;
+}
+.footer-col .sociallinks a
+{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #544f4b;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: aliceblue;
+  transition: all 0.5s ease;
+}
+.footer-col .sociallinks a:hover
+{
+  color: #544f4b;
+  background-color: aliceblue;
+}
+@media(max-width: 767px)
+{
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px)
+{
+  .footer-col{
+    width: 100%;
+  }
+}
