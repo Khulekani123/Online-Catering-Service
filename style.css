@@ -206,7 +206,7 @@ nav img{
 /*-----form-box----*/
 .form-box{
   width: 380px;
-  height: 650px;
+  height: 950px;
   position: relative;
   margin: 6% auto;
   background: #fff;
@@ -258,7 +258,7 @@ nav img{
 
 /*-----input-group----*/
 .input-group{
-  top: 180px;
+  top: 200px;
   width: 280px;
   position: absolute;
   transition: .5s;
@@ -285,6 +285,7 @@ nav img{
   border: 0;
   outline: none;
   border-radius: 30px;
+  
 }
 .check-box{
   margin: 30px 10px 30px 0;
@@ -445,6 +446,7 @@ width: 100%;
   font-size: 36px;
   font-weight: 500;
 }
+
 .container
 {
   width: 100%;
@@ -610,3 +612,4 @@ body{
     width: 100%;
   }
 }
+
